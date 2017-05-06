@@ -26,6 +26,12 @@ public class OperadoraMovelController {
 		m.put("status", status);
 		return mapper.writeValueAsString(m);
 	}
+	
+	@RequestMapping(value = "/test", method = RequestMethod.GET )
+	public String im_here() {
+
+		return "Operadora Móvel Dummy - L I G A D O";
+	}
 
 	/*
 	 * TODO AppWebConfiguration CORS produces = {"application/xml",
